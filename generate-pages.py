@@ -8,8 +8,6 @@ print("------------- Eat Docs Page List Generator -------------")
 if sys.version_info.major < 3:
   print("Error: You must run Python 3 or later to run this script. (Example: Python 2.7 is not supported. 3.10 is supported.)")
   exit(1)
-else:
-  print("DeBug:   Python version: " + sys.version_info.major + "." + sys.version_info.minor + "." + sys.version_info.micro + " (" + sys.implementation.name + ")") # no fstrings for compatiblity reasons
 print("VERBose: Checking for documentation entries...")
 files = []
 print("----------- ENTRIES ------------------------------------")

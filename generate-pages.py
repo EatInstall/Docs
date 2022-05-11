@@ -19,6 +19,6 @@ print("----------- LIST BUILD ---------------------------------")
 print("Starting generation...")
 for i in files:
   with open(os.getcwd() + "/index.html", "a") as f:
-    f.write("\n<li>" + os.path.basename(i).replace(".html", "") + "</li>")
+    f.write("\n<li><a href='" + os.path.basename(i) + "'>" + os.path.basename(i).replace(".html", "") + "</a></li>")
 print("Done, exiting successfully! ✅")
 exit(0)

@@ -1,0 +1,30 @@
+<div align="center"><i>Get Eat</i></div>
+
+<strong><p>NOTE: Eat is in alpha stage. We cannot be liable for any bugs in the package
+  manager. Use Eat at your own risk.</p></strong>
+
+<p>Eat is supported on hundreds of Linux distributions. Originally, it only worked on Debian
+  and derivatives of Debian (e.g. Ubuntu).</p>
+
+<p>Eat has a simple installer maintained by our community. It depends on dialog. To install
+  dialog, use APT: <code>sudo apt install dialog</code></p>
+
+<div align="center"><a href="https://manpages.ubuntu.com/manpages/jammy/man8/apt.8.html">Learn more about the APT CLI</a></div>
+
+<p>Then to install Eat, run the installer:</p>
+
+<pre>
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/EatInstall/EatInstaller/HEAD/eatinstaller.sh)"
+</pre
+
+<i>ERRORS</i>
+<p><b>"Distribution Not Supported":</b> Eat has no support for your distribution. This error usally appears
+  on Gentoo Linux, we are working to see if we can support Gentoo in the future.</p>
+
+<p><b>git: command not found:</b> It's probably a bug in your package manager.
+  If your distro is Debian or Ubuntu, try <code>sudo apt reinstall git</code> and
+  Git should be working.</b></p>
+
+<p><b>Warning: Update check failure:</b> This is possibly when new files are added to Eat's source
+  (e.g. adding a new package management utility) or when files are removed from the source distribution.
+  Please <code>cd</code> into <code>~/Eat-PKG-Manager</code> and run <code>git pull</code>.</b></p>
